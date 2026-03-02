@@ -1,0 +1,12 @@
+from db_utils import get_connection
+
+def test_db():
+    try:
+        conn = get_connection()
+        print("Test connection successful")
+        conn.close()
+    except Exception as e:
+        print(f"Test failed: {e}")
+
+if __name__ == "__main__":
+    test_db()
