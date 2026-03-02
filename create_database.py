@@ -61,7 +61,7 @@ def insert_sample_data(conn):
     customers = [(1,21),(2,23),(3,35),(4,45)]
     cursor.executemany("INSERT INTO Customers VALUES (?,?)", customers)
 
-    # ✅ Updated item names
+    # Updated item names
     items = [
         (1,'Laptop'),
         (2,'Phone'),
@@ -86,4 +86,5 @@ def insert_sample_data(conn):
     conn.commit()
     print("Sample data inserted")
 python
+
 
